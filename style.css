@@ -1,0 +1,208 @@
+:root {
+    --bg-main: #0b0c10;
+    --text-main: #c5c6c7;
+    --accent: #33b8d8; 
+    --accent-hover: #258ea8;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+
+    background-color: #0b132b; 
+    background-image: linear-gradient(rgba(11, 22, 44, 0.85), rgba(11, 22, 44, 0.85)), url('bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.card {
+    background-color: rgba(11, 12, 16, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 35px;
+    flex: 1 1 350px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(51, 184, 216, 0.2);
+    border: 1px solid rgba(51, 184, 216, 0.4);
+}
+
+h2 {
+    color: var(--accent);
+    text-align: center;
+    margin-bottom: 5px;
+    text-shadow: 0 0 10px rgba(51, 184, 216, 0.5);
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+    color: #a0a0a0;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    background-color: rgba(18, 24, 31, 0.7);
+    border: 1px solid rgba(51, 184, 216, 0.3);
+    color: white;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 10px rgba(51, 184, 216, 0.5);
+    background-color: rgba(18, 24, 31, 0.9);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--accent);
+    color: #0b0c10;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 0 0 15px rgba(51, 184, 216, 0.4);
+}
+
+.btn-submit:hover {
+    background-color: #4bd2f2;
+    box-shadow: 0 0 25px rgba(51, 184, 216, 0.8);
+    transform: translateY(-2px);
+}
+
+.output {
+    margin-top: 25px;
+    padding: 15px;
+    background: rgba(51, 184, 216, 0.15);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+.output.hidden {
+    display: none;
+}
+
+.persona-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--accent);
+    margin-top: 8px;
+    text-shadow: 0 0 10px rgba(51, 184, 216, 0.5);
+}
+
+.profile-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+    box-shadow: 0 0 25px rgba(51, 184, 216, 0.6); 
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.profile-bio {
+    margin-bottom: 30px;
+    font-size: 0.85rem;
+    color: #9ba4b5;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.link-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: relative; 
+    width: 100%; 
+    padding: 16px 20px;
+    background-color: rgba(33, 44, 59, 0.5);
+    backdrop-filter: blur(4px);
+    color: var(--text-main);
+    text-decoration: none;
+    border: 1px solid rgba(51, 184, 216, 0.3);
+    border-radius: 12px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.link-btn i {
+    position: absolute;
+    left: 20px; 
+    font-size: 1.3rem;
+    color: var(--accent);
+}
+
+.link-btn:hover {
+    background-color: rgba(51, 184, 216, 0.2);
+    border-color: var(--accent);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(51, 184, 216, 0.3);
+}
+
+.footer-text {
+    margin-top: 25px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+}

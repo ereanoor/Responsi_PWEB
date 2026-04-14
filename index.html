@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Persona & Linktree</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        
+        <section class="card finder-section">
+            <h2>Digital Persona Finder</h2>
+            <p class="subtitle">Temukan identitas digitalmu!</p>
+            <form id="personaForm">
+                <div class="input-group">
+                    <label for="nama">Nama Kamu</label>
+                    <input type="text" id="nama" placeholder="Masukkan Nama..." required>
+                </div>
+                <div class="input-group">
+                    <label for="hobi">Hobi Utama</label>
+                    <input type="text" id="hobi" placeholder="Contoh: Coding, Game, Musik..." required>
+                </div>
+                <div class="input-group">
+                    <label for="angka">Angka Keberuntungan</label>
+                    <input type="number" id="angka" min="1" max="10" placeholder="1 - 10" required>
+                </div>
+                <button type="submit" class="btn-submit">Generate Persona</button>
+            </form>
+            
+            <div id="hasilPersona" class="output hidden">
+                </div>
+        </section>
+
+        <section class="card profile-section">
+            <img src="pp.png" alt="Foto Profil" class="profile-pic">
+            
+            <h2 class="profile-name">@ereanoor</h2>
+            <p class="profile-bio">Informatics Student | G1A024075</p>
+            
+            <div class="link-container">
+                <a href="https://instagram.com/noorfikhri" target="_blank" class="link-btn">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                
+                <a href="https://github.com/ereanoor" target="_blank" class="link-btn">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                
+                <a href="https://linkedin.com/in/r-noor-fikhri" target="_blank" class="link-btn">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                
+                <a href="mailto:fikhrinoor9@gmail.com" class="link-btn">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </div>
+
+            <div class="footer-text" style="margin-top: 20px; font-size: 0.8rem; color: #888;">
+                &copy; 2026 ereanoor.dev
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
